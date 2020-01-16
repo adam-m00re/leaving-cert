@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Climate Change</title>
+	<link rel="icon" href="img/world.jpeg">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="lccs.css">
+</head>
+<body>
+	<!-- header element -->
+	<!-- In img comad src is assigning the image location, alt is if the image for some  reason cannot show  it displays  teh text  "picture of the world" width, hieght sets the size of the image  -->
+	<header>
+		<!-- <img src="img/world.jpeg" alt="picture of world" style="width: 200px; height: 200px;" > 
+		<h1>Climate Change </h1> -->
+		<div id="Home" class="tabcontent">
+  	<img src="img/world.jpeg" alt="picture of 		world" style="width: 200px; height: 200px;" > 
+  	<h1>Climate Change</h1>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h1>Paris</h1>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h1>Tokyo</h1>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Info" class="tabcontent">
+  <h1>Oslo</h1>
+  <p>Oslo is the capital of Norway.</p>
+</div>
+
+<button class="tablink" onclick="openCity('Home', this, '#A0E6FF')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openCity('Paris', this, '#A0E6FF')">Paris</button>
+<button class="tablink" onclick="openCity('Tokyo', this, '#A0E6FF')">Tokyo</button>
+<button class="tablink" onclick="openCity('Info', this, '#A0E6FF')">Info</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+	</header>
+
+	<!-- Main element -->
+	<main>
+		<h2>A Bit About Skiing </h2>
+		<p>Some of the earliest evidence of skiing is found in Norwegian rock paintings from about 4000 BCE. In fact, ski is taken from an Old Norse word meaning "stick of wood." Modern alpine skiing traces its roots to 19th-century Europe.</p>
+		<!-- <img src="img/ski3.jpeg"> -->
+		</center><iframe width="600" height="340" style="float: middle" src="https://www.youtube.com/embed/vJh3z_fgo4U">
+		</iframe>
+		<p class="caption"> Skiing 2018 </p>
+
+		<!-- Characteristics -->
+		<h2>Top ski resorts in the world</h2>
+		<ol>
+			<li>Whistler, Canada.</li>
+			<li>Courchevel, France. </li>
+			<li>Lech, Austria. </li>
+		</ol>
+
+		<!-- Friends  -->
+		<h2>Why there the best.</h2>
+		<p>Good snow conditions are always what your looking  for as a skier. Although some  modern facilities can always make the trip more enjoyable. All three  above have the top facilaties. The conditions really deppends on the weather but with warmer winters in recent years most ski resorts make snow. Click on the links below to learn more about teh ski resorts listed above and the ski resort featured in the pictures above: </p>
+		<ul>
+			<li><a target="_blank" href="https://en.wikipedia.org/wiki/Whistler_Blackcomb">Whistler</a></li>
+			<li><a target="_blank"href="https://en.wikipedia.org/wiki/Courchevel">Courchevel</a></li>
+			<li><a target="_blank"href="https://en.wikipedia.org/wiki/Lech_(Vorarlberg)">Lech</a></li>
+		</ul>
+
+
+	</main>
+
+	<!-- Footer element  -->
+	<footer>
+		<P>This site was created as a testpage &copy; Adam</P>
+	</footer>
+</body>
+</html>

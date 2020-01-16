@@ -1,0 +1,106 @@
+body{
+	margin: 0;
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 20px;
+}
+
+header{
+	background-color: #A0E6FF;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+h1, h2{
+	font-family: 'Permanent Marker', cursive;
+}
+/*header style*/
+header h1{
+	color: white;
+	font-size: 80px;
+
+}
+
+header img{
+	border-radius: 170px;
+    width: 300px;
+    border: 20px solid white ;
+}
+
+main{
+	max-width: 800px;
+	margin:0  auto;
+	padding: 20px
+}
+main img{
+	max-width: 100%;
+}
+h2{
+	font-size: 30px;
+	color:#A0E6FF;
+	margin: 40px  0 10px;
+}
+a{
+	color: #A0E6FF;
+}
+a:hover{
+	color: #483a94;
+
+}
+footer{
+	background-color: #d14635;
+	text-align: center;
+	color: white;
+	padding: 50px;
+
+}
+footer p{
+	margin: 0;
+}
+p.caption{
+	color: #999999;
+	font-style: italic;
+	margin-top: 0;
+}
+
+<head>
+<style>
+body {font-family: "Lato", sans-serif;}
+
+h1, h2, p1{
+	font-family: 'Permanent Marker', cursive;
+}
+p1,{ font-size: 80px;
+
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Home {background-color:#A0E6FF;}
+#Paris {background-color:#A0E6FF;}
+#Tokyo {background-color:#A0E6FF;}
+#Oslo {background-color:#A0E6FF;}
+</style>
+</head>
