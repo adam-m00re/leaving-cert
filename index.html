@@ -13,32 +13,29 @@
 		<!-- <img src="img/world.jpeg" alt="picture of world" style="width: 200px; height: 200px;" > 
 		<h1>Climate Change </h1> -->
 		<div id="Home" class="tabcontent">
-  	<img src="img/world.jpeg" alt="picture of 		world" style="width: 200px; height: 200px;" > 
+  	<img src="img/world.jpeg" alt="picture of world" style="width: 200px; height: 200px;" > 
   	<h1>Climate Change</h1>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h1>Paris</h1>
-  <p>Paris is the capital of France.</p> 
+<div id="Tab" class="tabcontent">
+  <h1>Tab</h1> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h1>Tokyo</h1>
-  <p>Tokyo is the capital of Japan.</p>
+<div id="Tab" class="tabcontent">
+  <h1>Tab</h1>
 </div>
 
 <div id="Info" class="tabcontent">
-  <h1>Oslo</h1>
-  <p>Oslo is the capital of Norway.</p>
+  <h1>Info</h1>
 </div>
 
-<button class="tablink" onclick="openCity('Home', this, '#A0E6FF')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openCity('Paris', this, '#A0E6FF')">Paris</button>
-<button class="tablink" onclick="openCity('Tokyo', this, '#A0E6FF')">Tokyo</button>
-<button class="tablink" onclick="openCity('Info', this, '#A0E6FF')">Info</button>
+<button class="tablink" onclick="newpage('Home', this, '#A0E6FF')" id="defaultOpen" >Home</button>
+<button class="tablink" onclick="newpage('Tab', this, '#A0E6FF'), alert('hello  world') ">Tab</button>
+<button class="tablink" onclick="newpage('Tab', this, '#A0E6FF')">Tab</button>
+<button class="tablink" onclick="newpage('Tab', this, '#A0E6FF')">Info</button>
 
 <script>
-function openCity(cityName,elmnt,color) {
+function newpage(Name,elmnt,color) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -48,7 +45,7 @@ function openCity(cityName,elmnt,color) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(Name).style.display = "block";
   elmnt.style.backgroundColor = color;
 
 }
