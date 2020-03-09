@@ -65,42 +65,39 @@ p.caption{
 
 <head>
 <style>
-body {font-family: "Lato", sans-serif;}
-
-h1, h2, p{
-	font-family: 'Permanent Marker', cursive;
-}
-p1,{ font-size: 80px;
-
+body {
+  font-size: 28px;
 }
 
-.tablink {
-  background-color: #555;
-  color: white;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
   float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
 }
 
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content */
-.tabcontent {
+li a {
+  display: block;
   color: white;
-  display: none;
-  padding: 50px;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-#Home {background-color:#A0E6FF;}
-#Paris {background-color:#A0E6FF;}
-#Tokyo {background-color:#A0E6FF;}
-#Oslo {background-color:#A0E6FF;}
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
 </style>
 </head>
