@@ -1,20 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Climate Change</title>
-	<link rel="icon" href="img/world.jpeg">
-	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="lccs.css">
-</head>
-<body>
-	<!-- header element -->
-	<!-- In img comad src is assigning the image location, alt is if the image for some  reason cannot show  it displays  teh text  "picture of the world" width, hieght sets the size of the image  -->
-	<header>
-		<!-- <img src="img/world.jpeg" alt="picture of world" style="width: 200px; height: 200px;" > 
-		<h1>Climate Change </h1> -->
-		<div id="Home" class="tabcontent">
-  	<img src="img/world.jpeg" alt="picture of world" style="width: 200px; height: 200px;" > 
-  	<h1>Climate Change</h1>ß
+<div id="Tab" class="tabcontent">
+  <h1>Tab</h1> 
+</div>
+
+<div id="Tab" class="tabcontent">
+  <h1>Tab</h1>
+</div>
+
+<div id="Info" class="tabcontent">
+  <h1>Info</h1>
+</div>
+
+<button class="tablink" onclick="newpage('Home', this, '#A0E6FF') " id="defaultOpen" >Home</button>
+<button class="tablink" onclick="newpage('Tab', this, '#A0E6FF')"id="page2.html">Tab</button>
+<button class="tablink" onclick="newpage('Tab', this, '#A0E6FF')">Tab</button>
+<button class="tablink" onclick="newpage('Tab', this, '#A0E6FF')">Info</button>
+
+<script>
+function newpage(Name,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(Name).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 	</header>
 
 	<!-- Main element -->
@@ -45,10 +63,3 @@
 
 
 	</main>
-
-	<!-- Footer element  -->
-	<footer>
-		<P>This site was created as a testpage &copy; Adam</P>
-	</footer>
-</body>
-</html>
