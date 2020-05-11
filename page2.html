@@ -5,61 +5,95 @@
 	<link rel="icon" href="img/world.jpeg">
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="lccs.css">
-</head><div class="header">
-  <h2>Scroll Down</h2>
-  <p>Scroll down to see the sticky effect.</p>
-</div>
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
 
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #A0E6FF;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
-<body>
-	<!-- header element -->
-	<!-- In img comad src is assigning the image location, alt is if the image for some  reason cannot show  it displays  teh text  "picture of the world" width, hieght sets the size of the image  -->
-	<header>
+<body><header>
 		<!-- <img src="img/world.jpeg" alt="picture of world" style="width: 200px; height: 200px;" > 
 		<h1>Climate Change </h1> -->
-		<div id="Home" class="header">
+		<div id="Home" class="tabcontent">
   	<img src="img/world.jpeg" alt="picture of world" style="width: 200px; height: 200px;" > 
   	<h1>Climate Change</h1>
+  	
 	</header>
 
 	<!-- Main element -->
 	<main>
-		<h2>A Bit About Skiing </h2>
-		<p>Some of the earliest evidence of skiing is found in Norwegian rock paintings from about 4000 BCE. In fact, ski is taken from an Old Norse word meaning "stick of wood." Modern alpine skiing traces its roots to 19th-century Europe.</p>
-		<!-- <img src="img/ski3.jpeg"> -->
-		</center><iframe width="600" height="340" style="float: middle" src="https://www.youtube.com/embed/vJh3z_fgo4U">
-		</iframe>
-		<p class="caption"> Skiing 2018 </p>
 
-		<!-- Characteristics -->
-		<h2>Top ski resorts in the world</h2>
-		<ol>
-			<li>Whistler, Canada.</li>
-			<li>Courchevel, France. </li>
-			<li>Lech, Austria. </li>
-		</ol>
+		
+		<center><h2>Climate change vs skiing</h2></center>
+		<center><iframe width="560" height="315" src="https://www.youtube.com/embed/vJh3z_fgo4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+		<center><h4>Live weather top 4 ski resorts </h4></center>
+		<center><!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/whistler-30521"><img src="https://w.bookcdn.com/weather/picture/32_30521_1_1_3498db_250_2980b9_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=79480"  alt="booked.net"/></a><!-- weather widget end -->
+		<!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/courchevel-9319"><img src="https://w.bookcdn.com/weather/picture/32_9319_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=79480"  alt="booked.net"/></a><!-- weather widget end -->
+		<!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/zermatt-18817"><img src="https://w.bookcdn.com/weather/picture/32_18817_1_1_3498db_250_2980b9_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=79480"  alt="booked.net"/></a><!-- weather widget end -->
+		<!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/aspen-19812"><img src="https://w.bookcdn.com/weather/picture/32_19812_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=79480"  alt="booked.net"/></a><!-- weather widget end --></center>
 
-		<!-- Friends  -->
-		<h2>Why there the best.</h2>
-		<p>Good snow conditions are always what your looking  for as a skier. Although some  modern facilities can always make the trip more enjoyable. All three  above have the top facilaties. The conditions really deppends on the weather but with warmer winters in recent years most ski resorts make snow. Click on the links below to learn more about teh ski resorts listed above and the ski resort featured in the pictures above: </p>
-		<ul>
-			<li><a target="_blank" href="https://en.wikipedia.org/wiki/Whistler_Blackcomb">Whistler</a></li>
-			<li><a target="_blank"href="https://en.wikipedia.org/wiki/Courchevel">Courchevel</a></li>
-			<li><a target="_blank"href="https://en.wikipedia.org/wiki/Lech_(Vorarlberg)">Lech</a></li>
-		</ul>
+		
+		
+		
+	
+		
+		<h2>Effects of climate chang on the earth</h2>
+		<iframe src="https://climate.nasa.gov/interactives/climate_time_machine" width="800" height="600"></iframe
+		>
+
+	<img src="file:///Users/donna/Desktop/leaving%20cert%20website/leaving-cert/img/9_c365-2-l.jpg">
+	<img src="file:///Users/donna/Desktop/leaving%20cert%20website/leaving-cert/img/Solar_Irradiance_graph.jpg">
 
 
-	</main>
 
-	<!-- Footer element  -->
-	<footer>
-		<P>This site was created as a testpage &copy; Adam</P>
-	</footer>
 </body>
 </html>
